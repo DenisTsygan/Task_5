@@ -1,0 +1,41 @@
+package com.company;
+
+import static com.company.UtilityFormat.format_number;
+
+public class EquilateralTriangle {
+    private double side;
+
+    public EquilateralTriangle(double side) {
+        setSide(side);
+    }
+
+    public double getSide() {
+        return side;
+    }
+
+    public void setSide(double side) {
+        this.side = side>0?side:0;
+    }
+    public double get_height() {
+        return (side*Math.sqrt(3))/2;
+    }
+    public double get_bisector() {
+        return (side*Math.sqrt(3))/2;
+    }
+    public double get_perimeter() {
+        return side*3;
+    }
+    public double get_square() {
+        return (side*side*Math.sqrt(3))/4;
+    }
+
+    @Override
+    public String toString() {
+
+         return this.side!=0?"EquilateralTriangle {" +
+                "side=" +format_number(side) +"; height="+format_number(get_height())+"; bisector="
+                 +format_number(get_bisector())+"; perimeter"+format_number(get_perimeter())
+                 +"; square="+format_number(this.get_square())+
+                '}':"EquilateralTriangle { Side triangle="+side+"}";
+    }
+}
