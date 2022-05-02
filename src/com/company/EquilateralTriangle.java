@@ -6,14 +6,14 @@ public class EquilateralTriangle {
     private double side;
 
     public EquilateralTriangle(double side) {
-        setSide(side);
+        set_Side(side);
     }
 
-    public double getSide() {
+    public double get_Side() {
         return side;
     }
 
-    public void setSide(double side) {
+    public void set_Side(double side) {
         this.side = side>0?side:0;
     }
     public double get_height() {

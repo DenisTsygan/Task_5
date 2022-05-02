@@ -7,14 +7,14 @@ public class RightPyramid extends EquilateralTriangle{
 
     public RightPyramid(double side,double apothem) {
         super(side);
-        setApothem(apothem);
+        set_Apothem(apothem);
 
     }
-    public double getApothem() {
+    public double get_Apothem() {
         return apothem;
     }
 
-    public void setApothem(double apothem) {
+    public void set_Apothem(double apothem) {
         this.apothem = apothem>0?apothem:0;
     }
     public double get_volume() {
@@ -23,13 +23,13 @@ public class RightPyramid extends EquilateralTriangle{
 
     @Override
     public double get_square() {
-        return super.get_square()+(3*super.getSide()*this.apothem)/2;
+        return super.get_square()+(3*super.get_Side()*this.apothem)/2;
     }
 
     @Override
     public String toString() {
-        String result= super.getSide()!= 0 && this.apothem!=0?"\nRightPyramid ({"+"volume="+format_number(get_volume())+"; square"+format_number(get_square())+"}"
-                :"\nRightPyramid {side="+super.getSide()+"; apothem="+this.apothem+"(side or apothem=0)}";
+        String result= super.get_Side()!= 0 && this.apothem!=0?"\nRightPyramid ({"+"volume="+format_number(get_volume())+"; square"+format_number(get_square())+"}"
+                :"\nRightPyramid {side="+ get_Side()+"; apothem="+this.apothem+"(side or apothem=0)}";
         return result+super.toString()+")";
     }
 }
