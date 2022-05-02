@@ -11,7 +11,7 @@ public class RightPyramids {
         current_rightPyramids_number = -1;
     }
 
-    public void add_Right_Pyramids(RightPyramid rightPyramid) {
+    public void add_RightPyramids(RightPyramid rightPyramid) {
         if (++current_rightPyramids_number < rightPyramids.length)
             rightPyramids[current_rightPyramids_number] = rightPyramid;
     }
