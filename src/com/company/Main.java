@@ -15,16 +15,6 @@ public class Main {
          * N треугольников и M пирамид, найти количество треугольников с площадью, большей средней площади
          * всех треугольников, и пирамиду с наибольшим объемом.
          */
- /*       EquilateralTriangle tr1=new EquilateralTriangle(0);
-        System.out.println(tr1);
-        EquilateralTriangle tr2=new EquilateralTriangle(4);
-        System.out.println(tr2);
-        EquilateralTriangle tr3=new EquilateralTriangle(5);
-        System.out.println(tr3);
-        System.out.println("-----------------------");
-        RightPyramid pir1=new RightPyramid(5,4);
-        System.out.println(pir1);
-   */
         Scanner scanner=new Scanner(System.in);
         Random random = new Random();
         System.out.println("Введите количевство треугольников (N):");
